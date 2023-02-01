@@ -1,8 +1,4 @@
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.api.*;
 
 import java.util.List;
 import java.util.Map;
@@ -51,13 +47,13 @@ public class MapExercisesTest {
         );
 
         Map<String, Integer> map = MapExercises.countWords(lst);
-
         assertThat(map).containsExactly(
             "hug", 4,
             "shreyas", 3,
             "ergun", 2,
             "cs61b", 1
         );
+        System.out.println(map);
     }
 
 }
